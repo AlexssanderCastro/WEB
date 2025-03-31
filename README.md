@@ -1,1 +1,1 @@
-# WEB
+# Repositório para atividades WEB
