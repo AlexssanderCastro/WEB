@@ -1,0 +1,22 @@
+body{
+    background: #dedcdc;
+}
+
+.center{
+    text-align: center;
+}
+.vermelho{
+    color: red;
+}
+.fonte-30{
+    font-size: 30px;
+}
+#teste{
+    color: blue;
+    background: yellow;
+
+}
+h1,p{
+    color: red;
+    text-align: center;
+}
