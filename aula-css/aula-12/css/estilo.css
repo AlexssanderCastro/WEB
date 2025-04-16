@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Special+Gothic+Expanded+One&display=swap');
+
+body{
+    background-color: white;
+}
+h1{
+    color: #ffffff;
+    border: 1px solid black;
+    border-radius: 30px;
+    text-align: center;
+    background: black;
+    letter-spacing: 5px;
+    font-family: "Bungee Spice", sans-serif;  
+    font-weight: 400;  
+}
+p{
+    color: red;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+.exemplo-back{
+    height: 300px;
+    background-size: cover;
+    background: gray url("../img/fundo.jpg") no-repeat center;
+}
+
+.botao{
+    margin-left: 33%;
+    background: green;
+    color: white;
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-radius: 5px;
+}
+.botao:hover{
+    background: blue;
+}
+.teste{
+    max-width: 800px;
+    height: 250px;
+    background: cyan;
+}
