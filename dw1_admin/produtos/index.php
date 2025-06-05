@@ -1,7 +1,7 @@
 <?php
 include "../includes/conexao.php";
 
-$sql = "select * from clientes";
+$sql = "select * from produtos";
 
 $dados = $conexao->query($sql);
 
@@ -24,7 +24,7 @@ $dados = $conexao->query($sql);
         <div class="row">
             <?php include "../includes/menu-lateral.php"; ?>
             <div class="col-9">
-                <h3 class="mt-3">Listagem de clientes</h3>
+                <h3 class="mt-3">Listagem de produtos</h3>
                 <a href="adicionar.php" class="btn btn-success btn-sm">
                     <i class="bi bi-plus-lg"></i>
                     Adicionar
@@ -34,9 +34,10 @@ $dados = $conexao->query($sql);
                         <tr>
                             <th scope="col">ID</th>
                             <th scope="col">Nome</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">CPF</th>
-                            <th scope="col">Salario</th>
+                            <th scope="col">Valor</th>
+                            <th scope="col">Quantidade</th>
+                            <th scope="col">Código</th>
+                            <th scope="col">Descricao</th>
                             <th scope="col" class="text-center">Ações</th>
                         </tr>
                     </thead>
@@ -45,9 +46,10 @@ $dados = $conexao->query($sql);
                             <tr>
                                 <th scope="row"><?php echo $item->id; ?></th>
                                 <td><?php echo $item->nome; ?></td>
-                                <td><?php echo $item->email; ?></td>
-                                <td><?php echo $item->cpf; ?></td>
-                                <td><?php echo $item->salario; ?></td>
+                                <td><?php echo $item->valor; ?></td>
+                                <td><?php echo $item->quantidade; ?></td>
+                                <td><?php echo $item->codigo; ?></td>
+                                <td><?php echo $item->descricao; ?></td>
                                 <td class="text-center">
                                     <a href="editar.php?id=<?php echo $item->id; ?>" class="btn btn-sm btn-warning"
                                         data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Editar">
